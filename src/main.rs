@@ -3,6 +3,7 @@ mod max_difference;
 mod max_difference_between_increasing_elements;
 mod longest_substring;
 mod rotate_array;
+mod divide_array;
 
 fn main() {
    // let v = vec![1,1,3,4,7,10];
@@ -22,4 +23,8 @@ fn main() {
   //rotate_array::rotate_array::left_rotate(&mut nums, 3);
   //rotate_array::rotate_array::right_rotate(&mut nums, 5);
   rotate_array::rotate_array::right_rotate_optimize(&mut nums, 4);
+
+  let arr  = vec! [1,3,4,8,7,9,3,5,1];
+  divide_array::divide_array_max_diff::divide_array(arr, 2);
+  
 }
