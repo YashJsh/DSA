@@ -4,6 +4,8 @@ mod max_difference_between_increasing_elements;
 mod longest_substring;
 mod rotate_array;
 mod divide_array;
+mod partition_array;
+mod max_manhattan;
 
 fn main() {
    // let v = vec![1,1,3,4,7,10];
@@ -27,4 +29,10 @@ fn main() {
   let arr  = vec! [1,3,4,8,7,9,3,5,1];
   divide_array::divide_array_max_diff::divide_array(arr, 2);
   
+  let mut nums2 : Vec<i32> = vec![2,2,4,5];
+  partition_array::partition_array::partition_array(nums2, 0);
+
+
+  let manstr = String::from("NWSE");
+  max_manhattan::max_manhattan::max_manhattan(manstr, 1);
 }
