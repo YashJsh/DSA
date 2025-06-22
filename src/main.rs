@@ -6,6 +6,8 @@ mod rotate_array;
 mod divide_array;
 mod partition_array;
 mod max_manhattan;
+mod min_deletions;
+mod divide_string_group_size_k;
 
 fn main() {
    // let v = vec![1,1,3,4,7,10];
@@ -35,4 +37,13 @@ fn main() {
 
   let manstr = String::from("NWSE");
   max_manhattan::max_manhattan::max_manhattan(manstr, 1);
+
+
+  let mindel = String::from("aabcaba");
+  min_deletions::minimum_deletions::minimum_deletions(mindel, 0);
+
+  let s = String::from("ctoyjrwtngqwt");
+  let fill = 'x';
+  divide_string_group_size_k::divide_string::divide_string(s, 8, fill);
+
 }
